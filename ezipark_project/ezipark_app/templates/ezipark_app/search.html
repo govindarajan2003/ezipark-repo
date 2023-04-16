@@ -1,0 +1,12 @@
+{% extends 'ezipark_app/base.html' %}
+
+{% block content %}
+<h1>Search Result</h1>
+
+{% for slot in search_results %}
+
+<p>{{ slot.address }} - {{ slot.pincode }} </p>
+
+
+{% endfor %}
+{% endblock %}

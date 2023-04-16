@@ -1,0 +1,8 @@
+{% extends 'ezipark_app/base.html'%}
+
+{% block content %}
+<h1>Available Parking Slot</h1>
+{% for slot in available_slots %}
+<p>{{ slot.address }} - {{ slot.pincode }}</p>
+{% endfor %}
+{% endblock %}
